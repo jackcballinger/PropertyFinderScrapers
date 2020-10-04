@@ -2,7 +2,8 @@ boto3
 pandas
 pylint==2.4.4
 pytest
+setuptools
 pyyaml>=5.1
 requests
 selenium
-setuptools
+

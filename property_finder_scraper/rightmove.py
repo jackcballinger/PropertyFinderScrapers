@@ -56,7 +56,7 @@ def create_raw_file_location(state, website, location, file_type, index=24):
         datetime.today().date().strftime("%Y/%m/%d"),
         str(index),
         location + "_" + str(index) + "." + file_type,
-    )
+    ).replace("\\", "/")
     return file_path
 
 
@@ -68,7 +68,7 @@ def create_trans_file_location(state, data_name, file_type):
         datetime.today().date().strftime("%Y/%m/%d"),
         data_name,
         data_name + "." + file_type,
-    )
+    ).replace("\\", "/")
     return file_path
 
 

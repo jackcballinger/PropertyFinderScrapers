@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI Test
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  checkout:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v2
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+        run: pylint .
+      - name: test
+        run: pytest tests/

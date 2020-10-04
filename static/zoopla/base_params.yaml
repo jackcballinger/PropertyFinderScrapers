@@ -1,0 +1,5 @@
+maximum_price: 500000
+property_type: houses
+minimum_beds: 2
+page_size: 100
+listing_status: sale

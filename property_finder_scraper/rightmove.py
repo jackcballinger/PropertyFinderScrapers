@@ -177,8 +177,7 @@ def format_property_data(df):
 
 def upload_trans_files(dfs):
     for df, data_name in zip(
-        dfs,
-        ["property_details", "estate_agent_details", "property_images"],
+        dfs, ["property_details", "estate_agent_details", "property_images"]
     ):
         file_path = create_trans_file_location(
             state="trans", data_name=data_name, file_type="csv"

@@ -20,6 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install pylint --upgrade
+          export PATH=$HOME/.local/bin:$PATH
       - name: lint with pylint
         run: pylint --rcfile=.pylintrc property_finder_scraper
       - name: test with pytest

@@ -5,3 +5,4 @@ pytest
 pyyaml>=5.1
 requests
 selenium
+setuptools

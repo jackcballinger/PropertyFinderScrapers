@@ -23,7 +23,8 @@ jobs:
           python3.8 -m pip install --upgrade pip
           sudo pip3 install setuptools
           if [ -f requirements.txt ]; then pip3 install -r requirements.txt;
-          sudo apt-get install pylint=2.6.0
+          sudo apt-get install pylint
+          which pylint
           export PATH=$HOME/.local/bin:$PATH; fi
       - name: lint with pylint
         run: pylint --rcfile=.pylintrc property_finder_scraper

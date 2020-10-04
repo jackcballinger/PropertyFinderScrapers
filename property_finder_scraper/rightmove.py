@@ -40,7 +40,7 @@ def make_rightmove_request(location, location_value, params):
 
     params["locationIdentifier"] = location_value
 
-    logger.info(f"making request: {location}")
+    logger.info("making request: {}".format(location))
     r = session.get(url, params=params)
 
     if r.status_code == 200:

@@ -22,6 +22,6 @@ jobs:
       - name: install pylint
         run: sudo apt-get install pylint
       - name: lint with pylint
-        run: pylint .
+        run: pylint --rcfile=.pylintrc property_finder_scraper
       - name: test with pytest
         run: pytest tests/

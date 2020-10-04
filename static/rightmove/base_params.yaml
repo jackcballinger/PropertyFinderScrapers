@@ -1,0 +1,15 @@
+minBedrooms: 2
+maxPrice: 500000
+propertyTypes:
+  - detached
+  - semi-detached
+  - terraced
+dontShow: 
+  - retirement
+  - sharedOwnership
+  - auction
+includeSSTC: false
+viewType: LIST
+channel: BUY
+areaSizeUnit: sqft
+currencyCode: GBP

@@ -1,0 +1,11 @@
+[MASTER]
+ignore=tests
+
+[MESSAGES CONTROL]
+disable=missing-docstring,logging-fstring-interpolation
+
+[LOGGING]
+logging-format-style=new
+
+[BASIC]
+good-names=df,i,k,r,s,v

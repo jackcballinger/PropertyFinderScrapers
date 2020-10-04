@@ -21,7 +21,7 @@ jobs:
           python3 -m pip install --upgrade pip
           sudo pip3 install setuptools
           if [ -f requirements.txt ]; then pip3 install -r requirements.txt;
-          sudo pip3 install pylint;
+          sudo apt-get install pylint=2.4.4
           export PATH=$HOME/.local/bin:$PATH; fi
       - name: lint with pylint
         run: pylint --rcfile=.pylintrc property_finder_scraper
